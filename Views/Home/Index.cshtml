@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Passcode";
+}
+
+
+<div class="d-flex justify-content-center" style="margin-top : 30%; ">
+    <h1>Random passcode (passcode# @ViewBag.Count)</h1>
+</div class="d-flex justify-content-center">
+<hr>
+<div class="text-center">
+    <div>
+        <p>@ViewBag.Code</p>
+    </div>
+    <br>
+    <a type="submit" href="increment" class="btn btn-dark">Generate</a>
+    <a type="submit" href="endsession" class="btn btn-dark">Reset</a>
+</div>
